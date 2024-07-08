@@ -7,8 +7,8 @@ import Button from '../../components/Button'
 function Home() {
   const navigate = useNavigate()
 
-  const signs = ['Áries', 'Touro', 'Gêmeos', 'Câncer', 'Leão', 'Virgem', 'Libra', 'Escorpião', 'Sagitário', 'Capricórnio', 'Aquário', 'Peixes']
-
+  const signs = ['Aries', 'Taurus', 'Gemini', 'Cancer', 'Leo', 'Virgo', 'Libra', 'Scorpio', 'Sagittarius', 'Capricorn', 'Aquarius', 'Pisces']
+  
   const handleButtonClick = (sign: string) => {
     navigate(`/sign-selection/${sign}`)
   }
@@ -18,7 +18,7 @@ function Home() {
       <div>
         <img src={stars} className="logo stars" alt="Stars logo" />
       </div>
-      <h1>Selecione um signo</h1>
+      <h1>Select a sign</h1>
       <div>
         {signs.map((sign) => (
           <Button key={sign} name={sign} onClick={() => handleButtonClick(sign)} />

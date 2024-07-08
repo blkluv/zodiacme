@@ -3,7 +3,7 @@ import './style.css'
 function Footer() {
     return (
         <footer className='footer'>
-            <p>Feito por <a href="https://instagram.com/wthallys_">@wthallys_</a></p>
+            <p>Made By <a href="https://healxyz.com">@healxyz</a></p>
         </footer>
     )
 }

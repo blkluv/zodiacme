@@ -8,7 +8,7 @@ function SignSelectionPage() {
   const navigate = useNavigate()
   const { firstSign } = useParams<{ firstSign: string }>()
 
-  const signs = ['Áries', 'Touro', 'Gêmeos', 'Câncer', 'Leão', 'Virgem', 'Libra', 'Escorpião', 'Sagitário', 'Capricórnio', 'Aquário', 'Peixes']
+  const signs = ['Aries', 'Taurus', 'Gemini', 'Cancer', 'Leo', 'Virgo', 'Libra', 'Scorpio', 'Sagittarius', 'Capricorn', 'Aquarius', 'Pisces']
 
   const handleButtonClick = (sign: string) => {
     navigate(`/result/${firstSign}/${sign}`)
@@ -19,7 +19,7 @@ function SignSelectionPage() {
       <div>
         <img src={stars} className="logo stars" alt="Stars logo" />
       </div>
-      <h1>Selecione o outro signo</h1>
+      <h1>Select a sign</h1>
       <div>
         {signs.map((sign) => (
           <Button key={sign} name={sign} onClick={() => handleButtonClick(sign)} />
